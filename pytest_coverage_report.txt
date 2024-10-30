@@ -1,0 +1,49 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.0, pytest-8.3.3, pluggy-1.5.0
+django: version: 5.1.2, settings: config.settings (from ini)
+rootdir: /Users/glebskotnikov/PycharmProjects/network_shop
+configfile: pytest.ini
+plugins: cov-6.0.0, django-4.9.0
+collected 19 items
+
+users/tests/test_admin.py ....                                           [ 21%]
+users/tests/test_csu.py .                                                [ 26%]
+users/tests/test_serializers.py ...                                      [ 42%]
+users/tests/test_views.py .......                                        [ 78%]
+users/tests/test_validators.py ....                                      [100%]
+
+---------- coverage: platform darwin, python 3.13.0-final-0 ----------
+Name                                    Stmts   Miss  Cover   Missing
+---------------------------------------------------------------------
+config/__init__.py                          0      0   100%
+config/asgi.py                              4      4     0%   10-16
+config/settings.py                         30      0   100%
+config/urls.py                              4      0   100%
+config/wsgi.py                              4      4     0%   10-16
+manage.py                                  11     11     0%   3-22
+users/__init__.py                           0      0   100%
+users/admin.py                             25      0   100%
+users/apps.py                               4      0   100%
+users/management/__init__.py                0      0   100%
+users/management/commands/__init__.py       0      0   100%
+users/management/commands/csu.py            7      0   100%
+users/migrations/0001_initial.py            9      0   100%
+users/migrations/__init__.py                0      0   100%
+users/models.py                            35      1    97%   63
+users/permissions.py                        4      0   100%
+users/serializers.py                       43      0   100%
+users/tests/__init__.py                     0      0   100%
+users/tests/conftest.py                    31      0   100%
+users/tests/test_admin.py                  30      0   100%
+users/tests/test_csu.py                    17      0   100%
+users/tests/test_serializers.py            18      0   100%
+users/tests/test_validators.py             29      4    86%   36-37, 45-46
+users/tests/test_views.py                  67      0   100%
+users/urls.py                               9      0   100%
+users/validators.py                        10      0   100%
+users/views.py                             46      0   100%
+---------------------------------------------------------------------
+TOTAL                                     437     24    95%
+
+
+============================== 19 passed in 1.68s ==============================

@@ -16,9 +16,13 @@ class User(AbstractUser):
 
     name = models.CharField(max_length=50, verbose_name="name")
     email = models.EmailField(unique=True, verbose_name="email")
-    country = models.CharField(max_length=100, verbose_name="country", **NULLABLE)
+    country = models.CharField(
+        max_length=100, verbose_name="country", **NULLABLE
+    )
     city = models.CharField(max_length=50, verbose_name="city", **NULLABLE)
-    street = models.CharField(max_length=100, verbose_name="street", **NULLABLE)
+    street = models.CharField(
+        max_length=100, verbose_name="street", **NULLABLE
+    )
     house_number = models.CharField(
         max_length=20, verbose_name="house_number", **NULLABLE
     )
@@ -26,9 +30,13 @@ class User(AbstractUser):
     debt = models.DecimalField(
         max_digits=10, decimal_places=2, verbose_name="debt", **NULLABLE
     )
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name="created_at")
+    created_at = models.DateTimeField(
+        auto_now_add=True, verbose_name="created_at"
+    )
 
-    role = models.CharField(max_length=2, choices=ROLE_CHOICES, verbose_name="role")
+    role = models.CharField(
+        max_length=2, choices=ROLE_CHOICES, verbose_name="role"
+    )
     supplier = models.ForeignKey(
         "self", on_delete=models.SET_NULL, **NULLABLE, related_name="suppliers"
     )

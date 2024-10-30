@@ -3,8 +3,12 @@ from rest_framework.routers import DefaultRouter
 
 from users.apps import UsersConfig
 
-from .views import (CustomTokenObtainPairView, CustomTokenRefreshView,
-                    ProductViewSet, UserViewSet)
+from .views import (
+    CustomTokenObtainPairView,
+    CustomTokenRefreshView,
+    ProductViewSet,
+    UserViewSet,
+)
 
 app_name = UsersConfig.name
 

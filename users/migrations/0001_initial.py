@@ -28,9 +28,20 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("name", models.CharField(max_length=255, verbose_name="product name")),
-                ("model", models.CharField(max_length=255, verbose_name="model")),
-                ("release_date", models.DateField(verbose_name="release date")),
+                (
+                    "name",
+                    models.CharField(
+                        max_length=255, verbose_name="product name"
+                    ),
+                ),
+                (
+                    "model",
+                    models.CharField(max_length=255, verbose_name="model"),
+                ),
+                (
+                    "release_date",
+                    models.DateField(verbose_name="release date"),
+                ),
             ],
             options={
                 "verbose_name": "product",
@@ -50,7 +61,10 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("password", models.CharField(max_length=128, verbose_name="password")),
+                (
+                    "password",
+                    models.CharField(max_length=128, verbose_name="password"),
+                ),
                 (
                     "last_login",
                     models.DateTimeField(
@@ -96,7 +110,8 @@ class Migration(migrations.Migration):
                 (
                     "date_joined",
                     models.DateTimeField(
-                        default=django.utils.timezone.now, verbose_name="date joined"
+                        default=django.utils.timezone.now,
+                        verbose_name="date joined",
                     ),
                 ),
                 ("name", models.CharField(max_length=50, verbose_name="name")),
@@ -109,19 +124,28 @@ class Migration(migrations.Migration):
                 (
                     "country",
                     models.CharField(
-                        blank=True, max_length=100, null=True, verbose_name="country"
+                        blank=True,
+                        max_length=100,
+                        null=True,
+                        verbose_name="country",
                     ),
                 ),
                 (
                     "city",
                     models.CharField(
-                        blank=True, max_length=50, null=True, verbose_name="city"
+                        blank=True,
+                        max_length=50,
+                        null=True,
+                        verbose_name="city",
                     ),
                 ),
                 (
                     "street",
                     models.CharField(
-                        blank=True, max_length=100, null=True, verbose_name="street"
+                        blank=True,
+                        max_length=100,
+                        null=True,
+                        verbose_name="street",
                     ),
                 ),
                 (
@@ -145,7 +169,9 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "created_at",
-                    models.DateTimeField(auto_now_add=True, verbose_name="created_at"),
+                    models.DateTimeField(
+                        auto_now_add=True, verbose_name="created_at"
+                    ),
                 ),
                 (
                     "role",

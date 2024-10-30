@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
         many=True,
         queryset=Product.objects.all(),
         required=False,
-        source="products"
+        source="products",
     )
 
     class Meta:
