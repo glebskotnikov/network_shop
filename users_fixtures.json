@@ -1,0 +1,235 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$ZeJA794X1gHGc5uLFQAFOR$UEbPIq7fPRGj6wd7roy6D5fHODNnXRBhcXRK4ppHLO8=",
+        "last_login": "2024-10-29T06:12:20.208Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-29T06:12:00.444Z",
+        "name": "Admin",
+        "email": "admin@yandex.ru",
+        "country": "Brazil",
+        "city": "Rio",
+        "street": "Avenida Vieira Souto",
+        "house_number": "13",
+        "debt": null,
+        "created_at": "2024-10-29T06:12:00.494Z",
+        "role": "a",
+        "supplier": null,
+        "groups": [],
+        "user_permissions": [],
+        "products": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$EDDf6ggn3GOPFurqCqO3Ph$74Uwd0dmYsUL1kwzSyNbz/oo7h7H4/g4KtkXOq17IvI=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-29T06:43:21Z",
+        "name": "Employee",
+        "email": "employee@sky.pro",
+        "country": "France",
+        "city": "Paris",
+        "street": null,
+        "house_number": null,
+        "debt": null,
+        "created_at": "2024-10-29T06:43:21.602Z",
+        "role": "em",
+        "supplier": null,
+        "groups": [],
+        "user_permissions": [],
+        "products": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$gIMpBmCzPEyl3afDuU6E1i$EnAH/tJ0izRpDR+4aZ/jK6zFvINDD8+P50OyBDFj/do=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-29T06:50:10Z",
+        "name": "Test_factory_01",
+        "email": "test_fa@sky.pro",
+        "country": "Germany",
+        "city": "Berlin",
+        "street": null,
+        "house_number": null,
+        "debt": null,
+        "created_at": "2024-10-29T06:50:10.783Z",
+        "role": "fa",
+        "supplier": null,
+        "groups": [],
+        "user_permissions": [],
+        "products": [
+            1
+        ]
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$i86bdC0IncvOhQWTaN2mU6$CAhyT1YJg2yTfOEqwU6LIUjzkhgYzYfMwhGWTzGm7nw=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-29T06:59:03Z",
+        "name": "Test_retailchain_01",
+        "email": "test_rc@sky.pro",
+        "country": "Italy",
+        "city": "Rome",
+        "street": null,
+        "house_number": null,
+        "debt": "0.00",
+        "created_at": "2024-10-29T06:59:03.357Z",
+        "role": "rc",
+        "supplier": 3,
+        "groups": [],
+        "user_permissions": [],
+        "products": [
+            1
+        ]
+    }
+},
+{
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$kgPA6CRSNRRFEA0o5Vg4OK$W+p5prm7/W8g62ybkqK5TZ+rTwDDYBjuTU1JTSrnC/E=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-29T23:42:40Z",
+        "name": "Test_indent",
+        "email": "test_ie@sky.pro",
+        "country": "Italy",
+        "city": "Rome",
+        "street": null,
+        "house_number": null,
+        "debt": "0.00",
+        "created_at": "2024-10-29T23:42:40.482Z",
+        "role": "ie",
+        "supplier": 4,
+        "groups": [],
+        "user_permissions": [],
+        "products": [
+            5,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "users.product",
+    "pk": 1,
+    "fields": {
+        "name": "Apple Watch",
+        "model": "Ultra 2",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 2,
+    "fields": {
+        "name": "Apple iPhone",
+        "model": "16 Plus",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 3,
+    "fields": {
+        "name": "Apple iPhone",
+        "model": "15 Pro Max",
+        "release_date": "2023-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 4,
+    "fields": {
+        "name": "Apple iPhone",
+        "model": "16 Pro max",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 5,
+    "fields": {
+        "name": "Apple Watch",
+        "model": "Series 10",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 6,
+    "fields": {
+        "name": "Apple Air Pods",
+        "model": "Pro 2",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 7,
+    "fields": {
+        "name": "Apple Air Pods",
+        "model": "4",
+        "release_date": "2024-09-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 8,
+    "fields": {
+        "name": "Apple iPad",
+        "model": "Mini",
+        "release_date": "2024-10-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 9,
+    "fields": {
+        "name": "Apple Macbook",
+        "model": "Air",
+        "release_date": "2023-10-20"
+    }
+},
+{
+    "model": "users.product",
+    "pk": 10,
+    "fields": {
+        "name": "Apple Macbook",
+        "model": "Pro",
+        "release_date": "2023-09-20"
+    }
+}
+]
